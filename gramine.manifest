@@ -1,0 +1,11 @@
+sgx.remote_attestation = "dcap"
+sgx.preheat_enclave = true
+sgx.enclave_size = "2G"
+sgx.max_threads = 128
+sys.enable_extra_runtime_domain_names_conf = true
+
+loader.env.TRUSTAUTHORITY_URL = { passthrough = true }
+loader.env.TRUSTAUTHORITY_API_URL = { passthrough = true }
+loader.env.TRUSTAUTHORITY_API_KEY = { passthrough = true }
+loader.env.HTTPS_PROXY = { passthrough = true }
+loader.env.https_proxy = { passthrough = true }
